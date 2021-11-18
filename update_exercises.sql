@@ -7,11 +7,11 @@ USE codeup_test_db;
 # SELECT * FROM albums WHERE release_date < 1980;
 
 # All albums by Michael Jackson
-# SELECT * FROM albums WHERE name = 'Michael Jackson';
+# SELECT * FROM albums WHERE artist = 'Michael Jackson';
 
 # UPDATES
 
-Make all the albums 10 times more popular (sales * 10)
+# Make all the albums 10 times more popular (sales * 10)
 UPDATE albums SET sales = sales * 10;
 SELECT 'Albums 10 times more popular' AS 'Info';
 SELECT * FROM albums;
