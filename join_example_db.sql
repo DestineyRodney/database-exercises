@@ -55,3 +55,8 @@ FROM users
          RIGHT JOIN roles ON users.role_id = roles.id;
 
 # Use COUNT and the appropriate join type to get a list of roles along with the number of users that have a given role. Hint: You will also need to use GROUP BY in the query.
+SELECT users.name AS user_name, roles.name AS role_name,
+       COUNT(*) FROM users JOIN roles ON users.role_id = roles.id
+GROUP BY roles.name, users.name;
+
+select ROLES.NAME,  count(ROLES.NAME) from USERS left join ROLES;
